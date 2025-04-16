@@ -230,7 +230,7 @@ nav a:hover {
 
 .about-info {
   background-color: #f0f4ff;
-  padding: 60px 20px;
+  padding: 20px 20px;
   margin-top: 40px;
   border-top: 2px solid #dcdde1;
 }
@@ -248,7 +248,7 @@ nav a:hover {
   color: #444;
   max-width: 900px;
   margin: 0 auto 20px auto;
-  text-align: center;
+  text-align: left;
 }
 
 /* --------------------- */
@@ -461,11 +461,14 @@ footer {
   
 
   .about-info h2 {
+    text-align: center;
     font-size: 1.6rem;
   }
 
   .about-info p {
+    text-align: left;
     font-size: 1rem;
+    padding-left: 10px;
   }
 
   .contact-section h2 {
@@ -476,9 +479,13 @@ footer {
     font-size: 1.1rem;
   }
 
-  .about-info,
   .contact-section {
+    text-align: left;
     padding: 20px 10px;
+  }
+  .about-info{
+    text-align: left;
+    padding: 10px 5px;
   }
 
   footer {
