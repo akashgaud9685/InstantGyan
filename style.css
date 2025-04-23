@@ -163,7 +163,8 @@ nav a:hover {
 .hero {
   background: linear-gradient(to right, #5f27cd, #74b9ff);
   color: white;
-  padding: 40px 0;
+  padding: 10px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
