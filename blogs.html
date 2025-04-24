@@ -11,42 +11,43 @@
   <style>
       /* Read Button Styling */
       .btn-read {
-        background-color: #007acc;
+        background-color: #e74c3c;
         color: white;
         padding: 8px 15px;
         text-decoration: none;
         border-radius: 5px;
         display: inline-block;
         margin-top: 10px;
+        transition: background-color 0.3s ease;
       }
-    
+      
       .btn-read:hover {
-        background-color: #005a8c;
+        background-color: #ff6b6b;
+        color: black;
       }
-    
+      
       /* Mobile and Desktop Responsiveness */
       @media (max-width: 768px) {
         .blog-section {
           padding: 20px;
         }
-    
+      
         .blog h4 {
           font-size: 1.2em;
         }
-    
+      
         .header-flex {
           flex-direction: column;
           align-items: flex-start;
           gap: 10px;
         }
-    
+      
         nav {
           justify-content: flex-start;
           gap: 10px;
         }
-    
       }
-    
+      
       /* Header Layout */
       .header-flex {
         display: flex;
@@ -55,7 +56,7 @@
         flex-wrap: wrap;
         gap: 10px;
       }
-    
+      
       /* Navigation Styling */
       nav {
         display: flex;
@@ -63,61 +64,67 @@
         flex-wrap: wrap;
         gap: 15px;
       }
-    
+      
       nav a {
         font-size: 0.95rem;
         padding: 6px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
       }
-    
+      
+      nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+      }
+      
       /* Search Bar */
       .search-form {
         display: flex;
         align-items: center;
         gap: 5px;
       }
-    
-    
+      
       /* Hero Section */
       .hero {
-        background-color: #f4f4f4;
-        padding: 40px 0;
-        text-align: center;
-      }
-    
-      .hero h2 {
-        margin-bottom: 10px;
-      }
-    
-      /* Blog Entries */
-      .blog {
-        margin-bottom: 30px;
-      }
-    
-      /* Footer Styling */
-      footer {
-        background-color: #222;
-        color: white;
-        padding: 20px 0;
-        text-align: center;
-      }
-    
-      footer a {
-        color: white;
-        text-decoration: none;
-        margin: 0 5px;
-      }
-    
-      footer a:hover {
-        text-decoration: underline;
-      }
-      .hero {
-        background: linear-gradient(to right, #5f27cd, #74b9ff);
+        background: linear-gradient(to right, #c0392b, #e74c3c);
         color: white;
         padding: 10px;
         padding-bottom: 20px;
         text-align: center;
       }
-          
+      
+      .hero h2 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+      }
+      
+      /* Blog Entries */
+      .blog {
+        margin-bottom: 30px;
+      }
+      
+      /* Footer Styling */
+      footer {
+        background-color: #2d3436;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+      
+      footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 5px;
+        transition: color 0.3s ease;
+      }
+      
+      footer a:hover {
+        color: #ff7675;
+        text-decoration: underline;
+      }
+         
   </style>
 </head>
 

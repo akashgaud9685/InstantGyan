@@ -1,4 +1,7 @@
-/* Reset and base styles */
+/* --------------------- */
+/* RESET AND BASE STYLES */
+/* --------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +10,7 @@
 }
 
 body {
-  background-color: #f8f9fa;
+  background-color: #fff6f6;
   color: #333;
 }
 
@@ -17,34 +20,15 @@ body {
   margin: auto;
 }
 
-/* Header and Navigation */
-header,
-.hero {
-  background: linear-gradient(to right, #5f27cd, #74b9ff);
-  color: white;
-}
+/* --------------------- */
+/* HEADER AND NAVIGATION */
+/* --------------------- */
 
 header {
-  padding: 0px 0;
-  margin-bottom: 0;
   padding-top: 20px;
-}
-
-header h1 {
   margin-bottom: 0;
-  font-size: 2.2rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.hero {
-  padding: 20px 0;
-  margin-top: 0;
-  text-align: center;
+  background: linear-gradient(to right, #c0392b, #e74c3c);
+  color: white;
 }
 
 .header-flex {
@@ -55,16 +39,29 @@ header h1 {
   gap: 15px;
 }
 
-/* Navigation Styles */
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;
+}
+
+/* --------------------- */
+/* NAVIGATION STYLES */
+/* --------------------- */
+
 nav {
   display: flex;
-  justify-content: center;   /* ✅ Center all nav links */
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;           /* ✅ Allow wrapping on small screens */
+  flex-wrap: wrap;
   gap: 15px;
 }
 
-/* Nav link style */
 nav a {
   color: white;
   text-decoration: none;
@@ -79,7 +76,8 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Dropdown styles */
+/* Dropdown Menu */
+
 .dropdown {
   position: relative;
 }
@@ -119,7 +117,10 @@ nav a:hover {
   display: block;
 }
 
-/* Search form styles */
+/* --------------------- */
+/* SEARCH BAR */
+/* --------------------- */
+
 .search-form {
   display: flex;
   align-items: center;
@@ -140,7 +141,7 @@ nav a:hover {
 }
 
 .search-form button {
-  background-color: #0984e3;
+  background-color: #e74c3c;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -151,14 +152,19 @@ nav a:hover {
 }
 
 .search-form button:hover {
-  background-color: #74b9ff;
+  background-color: #ff6b6b;
   color: black;
 }
 
-/* Hero section */
+/* --------------------- */
+/* HERO SECTION */
+/* --------------------- */
+
 .hero {
-  padding: 40px 0;
-  margin-top: 0;
+  background: linear-gradient(to right, #c0392b, #e74c3c);
+  color: white;
+  padding: 10px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -173,20 +179,25 @@ nav a:hover {
 }
 
 .btn {
-  background-color: #0984e3;
+  background-color: #e74c3c;
   color: white;
   padding: 10px 25px;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  display: inline-block;
+  font-weight: bold;
 }
 
 .btn:hover {
-  background-color: #74b9ff;
+  background-color: #ff6b6b;
   color: black;
 }
 
-/* Content section */
+/* --------------------- */
+/* MAIN CONTENT */
+/* --------------------- */
+
 .content {
   padding: 40px 0;
   background-color: white;
@@ -200,33 +211,38 @@ nav a:hover {
 }
 
 .category-card {
-  background-color: #dfe6e9;
+  background-color: #f8d7da;
   padding: 30px;
   flex: 1;
   text-align: center;
   border-radius: 8px;
   font-weight: bold;
   transition: transform 0.2s ease;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 
 .category-card:hover {
   transform: scale(1.05);
-  background-color: #b2bec3;
+  background-color: #f5b7b1;
 }
 
-/* ✅ New About Section Styles */
+/* --------------------- */
+/* ABOUT SECTION */
+/* --------------------- */
+
 .about-info {
-  background-color: #f0f4ff;
-  padding: 50px 20px;
+  background-color: #ffeef0;
+  padding: 20px 20px;
   margin-top: 40px;
-  border-top: 2px solid #dcdde1;
+  border-top: 2px solid #f1948a;
 }
 
 .about-info h2 {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 20px;
-  color: #2d3436;
+  margin-bottom: 25px;
+  color: #c0392b;
 }
 
 .about-info p {
@@ -235,34 +251,28 @@ nav a:hover {
   color: #444;
   max-width: 900px;
   margin: 0 auto 20px auto;
-  text-align: center;
+  text-align: left;
 }
 
-/* Footer */
-footer {
-  background-color: #2d3436;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-}
+/* --------------------- */
+/* CONTACT SECTION */
+/* --------------------- */
 
-/* Contact Section */
 .contact-section {
-  padding: 40px 0;
-  background-color: #f8f9fa;
+  padding: 50px 0;
+  background-color: #fff6f6;
 }
 
 .contact-section h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .contact-section p {
   text-align: center;
   font-size: 1.2rem;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .contact-section form {
@@ -282,7 +292,7 @@ footer {
 .contact-section input,
 .contact-section textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
@@ -290,7 +300,7 @@ footer {
 }
 
 .contact-section button {
-  background-color: #0984e3;
+  background-color: #e74c3c;
   color: white;
   border: none;
   padding: 10px 25px;
@@ -301,10 +311,79 @@ footer {
 }
 
 .contact-section button:hover {
-  background-color: #74b9ff;
+  background-color: #ff6b6b;
 }
 
-/* Responsive tweak */
+/* --------------------- */
+/* PRIVACY POLICY */
+/* --------------------- */
+
+.privacy-policy {
+  padding: 30px 20px;
+  background-color: white;
+}
+
+.privacy-policy h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.privacy-policy h3 {
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.privacy-policy p,
+.privacy-policy ul li {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* --------------------- */
+/* FAQ SECTION */
+/* --------------------- */
+
+.faq-section {
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+}
+
+.faq {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faq h3 {
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.faq p {
+  color: #444;
+}
+
+/* --------------------- */
+/* FOOTER */
+/* --------------------- */
+
+footer {
+  background-color: #2d3436;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+/* --------------------- */
+/* RESPONSIVE STYLES */
+/* --------------------- */
+
 @media (max-width: 650px) {
   html {
     font-size: 111%;
@@ -328,7 +407,7 @@ footer {
 
   nav {
     justify-content: center;
-    flex-direction: row;  /* ✅ Keep in one line */
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
@@ -361,29 +440,62 @@ footer {
     padding: 8px 15px;
   }
 
-  .category-card,
-  .about-info h2,
-  .about-info p,
-  .contact-section h2,
-  .contact-section p {
-    font-size: 90%;
-    margin: 0;
+  .content {
+    padding: 20px 10px;
   }
 
-  .about-info,
+  .content h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .categories {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .category-card {
+    width: 90%;
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  .about-info h2 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .about-info p {
+    text-align: left;
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-section p {
+    font-size: 1.1rem;
+  }
+
   .contact-section {
+    text-align: left;
     padding: 20px 10px;
+  }
+
+  .about-info {
+    text-align: left;
+    padding: 10px 5px;
   }
 
   footer {
     padding: 11px 0;
     font-size: 0.8rem;
   }
-  .content {
-    padding: 15px 15px;
-    padding-bottom: 0;
-    background-color: white;
-  }
+
   .privacy-policy h2 {
     font-size: 1.6em;
   }
@@ -397,41 +509,3 @@ footer {
     font-size: 0.9em;
   }
 }
-
-  /* Privacy Policy */
-  .privacy-policy h2 {
-    font-size: 1.8em;
-  }
-
-  .privacy-policy h3 {
-    font-size: 1.4em;
-  }
-
-  .privacy-policy p,
-  .privacy-policy ul li {
-    font-size: 1em;
-  }
-  /*question.html*/
-  .faq-section {
-    padding: 30px 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .faq {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 15px 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  }
-  
-  .faq h3 {
-    color: #008080;
-    margin-bottom: 10px;
-  }
-  
-  .faq p {
-    color: #444;
-  }
-  
